@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/style01.css" type="text/css" rel="stylesheet">
+    <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
+    <!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<h1>你好，世界！</h1>
+
+<!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+<!--加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+<div class="row">
+    <div class="col-md-1">.col-md-1</div>
+    <div class="col-md-1">.col-md-1</div>
+    <div class="col-md-1">.col-md-1</div>
+    <div class="col-md-1">.col-md-1</div>
+    <div class="col-md-1">.col-md-1</div>
+    <div class="col-md-1">.col-md-1</div>
+    <div class="col-md-1">.col-md-1</div>
+    <div class="col-md-1">.col-md-1</div>
+    <div class="col-md-1">.col-md-1</div>
+    <div class="col-md-1">.col-md-1</div>
+    <div class="col-md-1">.col-md-1</div>
+    <div class="col-md-1">.col-md-1</div>
+</div>
+<div class="row">
+    <div class="col-md-8">.col-md-8</div>
+    <div class="col-md-4">.col-md-4</div>
+</div>
+<div class="row">
+    <div class="col-md-4">.col-md-4</div>
+    <div class="col-md-4">.col-md-4</div>
+    <div class="col-md-4">.col-md-4</div>
+</div>
+<div class="row">
+    <div class="col-md-6">.col-md-6</div>
+    <div class="col-md-6">.col-md-6</div>
+</div>
+
+<!-- Stack the columns on mobile by making one full-width and the other half-width -->
+<div class="row">
+    <div class="col-xs-12 col-md-8">.col-xs-12 .col-md-8</div>
+    <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+</div>
+
+<!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
+<div class="row">
+    <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+    <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+    <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+</div>
+
+<!-- Columns are always 50% wide, on mobile and desktop -->
+<div class="row">
+    <div class="col-xs-6">.col-xs-6</div>
+    <div class="col-xs-6">.col-xs-6</div>
+</div>
+
+
+<div class="row">
+    <div class="col-xs-9">.col-xs-9</div>
+    <div class="col-xs-4">.col-xs-4<br>Since 9 + 4 = 13 &gt; 12, this 4-column-wide div gets wrapped onto a new line as
+        one contiguous unit.
+    </div>
+    <div class="col-xs-6">.col-xs-6<br>Subsequent columns continue along the new line.</div>
+</div>
+
+
+<div class="row">
+    <div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3</div>
+    <div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3</div>
+
+    <!-- Add the extra clearfix for only the required viewport -->
+    <div class="clearfix visible-xs-block"></div>
+
+    <div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3</div>
+    <div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3</div>
+</div>
+
+<div class="row">
+    <div class="col-sm-5 col-md-6">.col-sm-5 .col-md-6</div>
+    <div class="col-sm-5 col-sm-offset-2 col-md-6 col-md-offset-0">.col-sm-5 .col-sm-offset-2 .col-md-6
+        .col-md-offset-0
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-sm-6 col-md-5 col-lg-6">.col-sm-6 .col-md-5 .col-lg-6</div>
+    <div class="col-sm-6 col-md-5 col-md-offset-2 col-lg-6 col-lg-offset-0">.col-sm-6 .col-md-5 .col-md-offset-2
+        .col-lg-6 .col-lg-offset-0
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-4">.col-md-4</div>
+    <div class="col-md-4 col-md-offset-4">.col-md-4 .col-md-offset-4</div>
+</div>
+<div class="row">
+    <div class="col-md-3 col-md-offset-3">.col-md-3 .col-md-offset-3</div>
+    <div class="col-md-3 col-md-offset-3">.col-md-3 .col-md-offset-3</div>
+</div>
+<div class="row">
+    <div class="col-md-6 col-md-offset-3">.col-md-6 .col-md-offset-3</div>
+</div>
+
+<div class="row">
+    <div class="col-xs-6 col-sm-4">
+    </div>
+    <div class="col-xs-6 col-sm-4">
+    </div>
+    <div class="col-xs-6 col-xs-offset-3 col-sm-4 col-sm-offset-0">
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-sm-9">
+        Level 1: .col-sm-9
+        <div class="row">
+            <div class="col-xs-8 col-sm-6">
+                Level 2: .col-xs-8 .col-sm-6
+            </div>
+            <div class="col-xs-4 col-sm-6">
+                Level 2: .col-xs-4 .col-sm-6
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-9 col-md-push-3">.col-md-9 .col-md-push-3</div>
+    <div class="col-md-3 col-md-pull-9">.col-md-3 .col-md-pull-9</div>
+</div>
+
+<h1>h1. Bootstrap heading</h1>
+<h2>h2. Bootstrap heading</h2>
+<h3>h3. Bootstrap heading</h3>
+<h4>h4. Bootstrap heading</h4>
+<h5>h5. Bootstrap heading</h5>
+<h6>h6. Bootstrap heading</h6>
+
+<h1>h1. Bootstrap heading
+    <small>Secondary text</small>
+</h1>
+<h2>h2. Bootstrap heading
+    <small>Secondary text</small>
+</h2>
+<h3>h3. Bootstrap heading
+    <small>Secondary text</small>
+</h3>
+<h4>h4. Bootstrap heading
+    <small>Secondary text</small>
+</h4>
+<h5>h5. Bootstrap heading
+    <small>Secondary text</small>
+</h5>
+<h6>h6. Bootstrap heading
+    <small>Secondary text</small>
+</h6>
+
+<p class="lead">what up</p>
+You can use the mark tag to
+<mark>highlight</mark>
+text.
+<br/>
+<del>This line of text is meant to be treated as deleted text.</del>
+<br/>
+<ins>This line of text is meant to be treated as an addition to the document.</ins>
+<br/>
+<u>This line of text will render as underlined</u>
+<br/>
+<small>This line of text is meant to be treated as fine print.</small>
+<br/>
+<strong>rendered as bold text</strong>
+<br/>
+<em>rendered as italicized text</em>
+<p class="text-left">Left aligned text.</p>
+<p class="text-center">Center aligned text.</p>
+<p class="text-right">Right aligned text.</p>
+<p class="text-justify">Justified text.</p>
+<p class="text-nowrap">No wrap text.</p>
+
+<p class="text-lowercase">Lowercased text.</p>
+<p class="text-uppercase">Uppercased text.</p>
+<p class="text-capitalize">Capitalized text.</p>
+
+<abbr title="attribute">attr</abbr>
+<abbr title="HyperText Markup Language" class="initialism">HTML</abbr>
+<br/>
+
+<address>
+    <strong>Twitter, Inc.</strong><br>
+    1355 Market Street, Suite 900<br>
+    San Francisco, CA 94103<br>
+    <abbr title="Phone">P:</abbr> (123) 456-7890
+</address>
+
+<address>
+    <strong>Full Name</strong><br>
+    <a href="mailto:#">first.last@example.com</a>
+</address>
+
+<blockquote>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+</blockquote>
+
+<blockquote>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+    <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+</blockquote>
+
+<blockquote class="blockquote-reverse">
+    右对齐
+</blockquote>
+
+<ul>
+    <li>1.</li>
+    <li>1.</li>
+    <li>1.</li>
+    <li>1.</li>
+    <li>1.</li>
+    <li>1.</li>
+</ul>
+
+<ol>
+    <li>1.</li>
+    <li>2.</li>
+    <li>3.</li>
+    <li>4.</li>
+    <li>5.</li>
+    <li>6.</li>
+    <li>7.</li>
+    <li>8.</li>
+</ol>
+
+<ul class="list-unstyled">
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+</ul>
+
+<ul class="list-inline">
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+</ul>
+
+<dl>
+    <dt>title</dt>
+    <dd>description</dd>
+</dl>
+
+<dl class="dl-horizontal">
+    <dt>标题左</dt>
+    <dd>内容右</dd>
+</dl>
+
+For example, <code>&lt;section&gt;</code> should be wrapped as inline.
+<br/>
+To switch directories, type <kbd>cd</kbd> followed by the name of the directory.<br>
+To edit settings, press <kbd><kbd>ctrl</kbd> + <kbd>,</kbd></kbd>
+<pre>&lt;p&gt;Sample text here...&lt;/p&gt;</pre>
+<var>y</var> = <var>m</var><var>x</var> + <var>b</var><br/>
+
+<samp>This text is meant to be treated as sample output from a computer program.This text is meant to be treated
+    as sample output from a computer program.</samp><br/>
+<table class="table">
+    <tr>
+        <th>Month</th>
+        <th>Savings</th>
+    </tr>
+    <tr>
+        <td>January</td>
+        <td>$100</td>
+    </tr>
+</table>
+
+<table class="table table-striped">
+    <tr>
+        <th>Month</th>
+        <th>Savings</th>
+    </tr>
+    <tr>
+        <td>January</td>
+        <td>$100</td>
+    </tr>
+</table>
+<table class="table table-hover">
+    <tr>
+        <th>Month</th>
+        <th>Savings</th>
+    </tr>
+    <tr>
+        <td>January</td>
+        <td>$100</td>
+    </tr>
+</table>
+
+<table class="table table-condensed">
+    <tr>
+        <th>Month</th>
+        <th>Savings</th>
+    </tr>
+    <tr>
+        <td>January</td>
+        <td>$100</td>
+    </tr>
+</table>
+
+<div class="table-responsive">
+    <table class="table table-striped">
+        <tr>
+            <th>Month</th>
+            <th>Savings</th>
+        </tr>
+        <tr>
+            <td>January</td>
+            <td>$100</td>
+        </tr>
+    </table>
+</div>
+<form>
+    <div class="form-group">
+        <label for="exampleInputEmail1">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+    </div>
+    <div class="form-group">
+        <label for="exampleInputPassword1">Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+    </div>
+    <div class="form-group">
+        <label for="exampleInputFile">File input</label>
+        <input type="file" id="exampleInputFile">
+        <p class="help-block">Example block-level help text here.</p>
+    </div>
+    <div class="checkbox">
+        <label>
+            <input type="checkbox"> Check me out
+        </label>
+    </div>
+    <button type="submit" class="btn btn-default">Submit</button>
+</form>
+
+<form class="form-inline">
+    <div class="form-group">
+        <label for="exampleInputName2">Name</label>
+        <input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
+    </div>
+    <div class="form-group">
+        <label for="exampleInputEmail2">Email</label>
+        <input type="email" class="form-control" id="exampleInputEmail2" placeholder="jane.doe@example.com">
+    </div>
+    <button type="submit" class="btn btn-default">Send invitation</button>
+</form>
+<form class="form-inline">
+    <div class="form-group">
+        <label class="sr-only" for="exampleInputEmail3">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Email">
+    </div>
+    <div class="form-group">
+        <label class="sr-only" for="exampleInputPassword3">Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword3" placeholder="Password">
+    </div>
+    <div class="checkbox">
+        <label>
+            <input type="checkbox"> Remember me
+        </label>
+    </div>
+    <button type="submit" class="btn btn-default">Sign in</button>
+</form>
+
+<form class="form-inline">
+    <div class="form-group">
+        <label class="sr-only" for="exampleInputAmount">Amount (in dollars)</label>
+        <div class="input-group">
+            <div class="input-group-addon">$</div>
+            <input type="text" class="form-control" id="exampleInputAmount" placeholder="Amount">
+            <div class="input-group-addon">.00</div>
+        </div>
+    </div>
+    <button type="submit" class="btn btn-primary">Transfer cash</button>
+</form>
+<br/>
+
+<form class="form-horizontal">
+    <div class="form-group">
+        <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+        <div class="col-sm-10">
+            <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+        <div class="col-sm-10">
+            <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox"> Remember me
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+            <button type="submit" class="btn btn-default">Sign in</button>
+        </div>
+    </div>
+</form>
+
+<input type="text" class="form-control" placeholder="Text input">
+
+<textarea class="form-control" rows="3"></textarea>
+
+<div class="checkbox">
+    <label>
+        <input type="checkbox" value="">
+        Option one is this and that&mdash;be sure to include why it's great
+    </label>
+</div>
+<div class="checkbox disabled">
+    <label>
+        <input type="checkbox" value="" disabled>
+        Option two is disabled
+    </label>
+</div>
+
+<div class="radio">
+    <label>
+        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+        Option one is this and that&mdash;be sure to include why it's great
+    </label>
+</div>
+<div class="radio">
+    <label>
+        <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+        Option two can be something else and selecting it will deselect option one
+    </label>
+</div>
+<div class="radio disabled">
+    <label>
+        <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled>
+        Option three is disabled
+    </label>
+</div>
+
+<label class="checkbox-inline">
+    <input type="checkbox" id="inlineCheckbox1" value="option1"> 1
+</label>
+<label class="checkbox-inline">
+    <input type="checkbox" id="inlineCheckbox2" value="option2"> 2
+</label>
+<label class="checkbox-inline">
+    <input type="checkbox" id="inlineCheckbox3" value="option3"> 3
+</label>
+
+<label class="radio-inline">
+    <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 1
+</label>
+<label class="radio-inline">
+    <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 2
+</label>
+<label class="radio-inline">
+    <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> 3
+</label>
+
+<div class="checkbox">
+    <label>
+        <input type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+    </label>
+</div>
+<div class="radio">
+    <label>
+        <input type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="...">
+    </label>
+</div>
+
+<select class="form-control">
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+    <option>5</option>
+</select>
+
+<select multiple class="form-control">
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+    <option>5</option>
+</select>
+
+<form class="form-inline">
+    <div class="form-group">
+        <label class="sr-only">Email</label>
+        <p class="form-control-static">email@example.com</p>
+    </div>
+    <div class="form-group">
+        <label for="inputPassword2" class="sr-only">Password</label>
+        <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
+    </div>
+    <button type="submit" class="btn btn-default">Confirm identity</button>
+</form>
+<a class="btn btn-default" href="#" role="button">Link</a>
+<button class="btn btn-default" type="submit">Button</button>
+<input class="btn btn-default" type="button" value="Input">
+<input class="btn btn-default" type="submit" value="Submit">
+<input class="form-control" id="disabledInput" type="text" placeholder="Disabled input here..." disabled>
+<!-- Standard button -->
+<button type="button" class="btn btn-default">（默认样式）Default</button>
+
+<!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+<button type="button" class="btn btn-primary">（首选项）Primary</button>
+
+<!-- Indicates a successful or positive action -->
+<button type="button" class="btn btn-success">（成功）Success</button>
+
+<!-- Contextual button for informational alert messages -->
+<button type="button" class="btn btn-info">（一般信息）Info</button>
+
+<!-- Indicates caution should be taken with this action -->
+<button type="button" class="btn btn-warning">（警告）Warning</button>
+
+<!-- Indicates a dangerous or potentially negative action -->
+<button type="button" class="btn btn-danger">（危险）Danger</button>
+
+<!-- Deemphasize a button by making it look like a link while maintaining button behavior -->
+<button type="button" class="btn btn-link">（链接）Link</button>
+
+<p>
+    <button type="button" class="btn btn-primary btn-lg">（大按钮）Large button</button>
+    <button type="button" class="btn btn-default btn-lg">（大按钮）Large button</button>
+</p>
+<p>
+    <button type="button" class="btn btn-primary">（默认尺寸）Default button</button>
+    <button type="button" class="btn btn-default">（默认尺寸）Default button</button>
+</p>
+<p>
+    <button type="button" class="btn btn-primary btn-sm">（小按钮）Small button</button>
+    <button type="button" class="btn btn-default btn-sm">（小按钮）Small button</button>
+</p>
+<p>
+    <button type="button" class="btn btn-primary btn-xs">（超小尺寸）Extra small button</button>
+    <button type="button" class="btn btn-default btn-xs">（超小尺寸）Extra small button</button>
+</p>
+<button type="button" class="btn btn-primary btn-lg btn-block">（块级元素）Block level button</button>
+<button type="button" class="btn btn-default btn-lg btn-block">（块级元素）Block level button</button>
+<button type="button" class="btn btn-primary btn-lg active">Primary button</button>
+<button type="button" class="btn btn-default btn-lg active">Button</button>
+<a href="#" class="btn btn-primary btn-lg active" role="button">Primary link</a>
+<a href="#" class="btn btn-default btn-lg active" role="button">Link</a>
+<p class="text-muted">text-muted</p>
+<p class="text-primary">text-primary</p>
+<p class="text-success">text-success</p>
+<p class="text-info">text-info</p>
+<p class="text-warning">text-warning</p>
+<p class="text-danger">text-danger</p>
+
+<p class="bg-primary">bg-primary</p>
+<p class="bg-success">bg-success</p>
+<p class="bg-info">bg-info</p>
+<p class="bg-warning">bg-warning</p>
+<p class="bg-danger">bg-danger</p>
+
+<span class="caret"></span>
+
+<div class="pull-left">...</div>
+<div class="pull-right">...</div>
+
+
+
+</body>
+</html>
